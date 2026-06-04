@@ -8,34 +8,165 @@
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <main class="page">
-      <section class="hero">
-        <p class="eyebrow">LingoNews</p>
-        <h1>ニュースで英語を読む。英会話で使えるようにする。</h1>
-        <p class="lead">
-          LingoNews is an English learning app for Japanese speakers. Read short real-world
-          news, review vocabulary, listen to audio, and practice English conversation with an AI teacher.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="./support.html">Support</a>
-          <a class="button secondary" href="./privacy-policy.html">Privacy Policy</a>
+    <header class="site-nav">
+      <a class="nav-brand" href="./">
+        <img src="./assets/app-icon.png" alt="" width="32" height="32" />
+        <span>LingoNews</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">特長</a>
+        <a href="#teachers">会話</a>
+        <a href="./support.html">サポート</a>
+        <a href="./privacy-policy.html">プライバシー</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero ln-hero">
+        <div class="ln-hero-copy">
+          <p class="eyebrow">English × News × AI</p>
+          <h1>ニュースで英語を読む。<br />英会話で使えるようにする。</h1>
+          <p class="lead">
+            LingoNewsは、日本語話者のための英語学習アプリです。実際のニュース記事を読みながら、
+            語彙力・リーディング力・リスニング力・スピーキング力を自然に伸ばせます。
+            毎日のニュースを読む時間が、そのまま英語学習の時間に変わります。
+          </p>
+          <div class="actions">
+            <a class="button appstore" href="https://apps.apple.com/app/id6764214485" target="_blank" rel="noopener">
+              <svg viewBox="0 0 384 512" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+              <span>App Storeでダウンロード</span>
+            </a>
+            <a class="button secondary" href="#features">特長を見る</a>
+          </div>
+          <p class="hero-note">✅ 7日間無料トライアル ・ いつでもキャンセル可</p>
+        </div>
+        <div class="ln-hero-art">
+          <img src="./assets/logo.png" alt="LingoNews mascot reading the news" />
         </div>
       </section>
 
-      <section class="apps" aria-labelledby="features-title">
-        <h2 id="features-title">Features</h2>
-        <div class="app-card">
-          <div>
-            <p class="app-kicker">Daily practice</p>
-            <h3>News, vocabulary, and conversation</h3>
-            <p>
-              Choose beginner, intermediate, or advanced news. Practice with topic filters,
-              word quizzes, audio playback, and conversation styles for text, own-pace speaking,
-              or real-time speaking.
-            </p>
-          </div>
+      <section class="ln-section" id="features" aria-labelledby="features-title">
+        <p class="eyebrow">Features</p>
+        <h2 id="features-title">毎日の学習を、ひとつのアプリで。</h2>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-media"><img src="./assets/feat-news.png" alt="" loading="lazy" /></div>
+            <div class="feature-body">
+              <h3>実際のニュースで読む</h3>
+              <p>初級・中級・上級に分かれた毎日のニュース記事。日本語訳・重要単語・音声付きで、内容をしっかり理解しながら無理なく学べます。</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-media"><img src="./assets/feat-conversation.png" alt="" loading="lazy" /></div>
+            <div class="feature-body">
+              <h3>AI英語教師と会話練習</h3>
+              <p>記事の内容についてAI英語教師と英会話を練習。会話後にはフィードバックがあり、発音・表現・文法の改善に役立ちます。</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-media"><img src="./assets/feat-review.png" alt="" loading="lazy" /></div>
+            <div class="feature-body">
+              <h3>単語を保存して復習</h3>
+              <p>音声発音付きの単語クイズと、学んだ単語を保存して復習できるレビュー画面。「読む」だけで終わらせず「覚える」まで。</p>
+            </div>
+          </article>
+          <article class="feature-card">
+            <div class="feature-media"><img src="./assets/feat-teachers.png" alt="" loading="lazy" /></div>
+            <div class="feature-body">
+              <h3>4種類の教師キャラクター</h3>
+              <p>Apple、Grape、Orange、Pear。お気に入りの先生を選んで、自然な会話の中で自分の意見を英語で話す力を身につけましょう。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="ln-section ln-gallery">
+        <p class="eyebrow">Inside the app</p>
+        <h2>アプリの画面を見てみる</h2>
+        <p class="lead gallery-lead">
+          ニュースを読んで、単語クイズで覚えて、AI先生と話す。学習のすべてが一つのアプリの中に。
+        </p>
+        <div class="phone-gallery">
+          <figure class="phone phone-light">
+            <img src="./assets/shot-home.png" alt="今日の英語レッスンのホーム画面" loading="lazy" />
+            <figcaption>今日の英語レッスン</figcaption>
+          </figure>
+          <figure class="phone phone-light">
+            <img src="./assets/shot-news.png" alt="ニュース記事の読解画面" loading="lazy" />
+            <figcaption>本物のニュースを読む</figcaption>
+          </figure>
+          <figure class="phone phone-light">
+            <img src="./assets/shot-quiz.png" alt="単語クイズの画面" loading="lazy" />
+            <figcaption>単語クイズで覚える</figcaption>
+          </figure>
+          <figure class="phone phone-light">
+            <img src="./assets/shot-talk.png" alt="AI先生との会話画面" loading="lazy" />
+            <figcaption>AI先生と話す</figcaption>
+          </figure>
+          <figure class="phone phone-light">
+            <img src="./assets/shot-review.png" alt="学習の進み具合を記録するレビュー画面" loading="lazy" />
+            <figcaption>学習の進み具合を記録</figcaption>
+          </figure>
+          <figure class="phone phone-light">
+            <img src="./assets/shot-teachers.png" alt="先生を選ぶ画面" loading="lazy" />
+            <figcaption>お気に入りの先生を選ぶ</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="ln-section ln-showcase" id="teachers">
+        <div class="showcase-copy">
+          <p class="eyebrow">Conversation</p>
+          <h2>話せる英語を、AIと一緒に。</h2>
+          <p class="lead">
+            記事の内容についてAI英語教師と会話を練習。先生があなたの答えに合わせて
+            自然に会話を続け、会話後には発音・表現・文法のフィードバックが受けられます。
+          </p>
+          <ul class="feature-list">
+            <li>初級・中級・上級に分かれた毎日のニュース記事</li>
+            <li>日本語訳付きで内容をわかりやすく理解</li>
+            <li>重要単語を学べる語彙リストと音声付き単語クイズ</li>
+            <li>会話スコアと発音・表現・文法のフィードバックで上達を実感</li>
+            <li>学んだ単語を保存して復習できるレビュー画面</li>
+            <li>メール・Apple・Googleでかんたんサインイン</li>
+          </ul>
+        </div>
+        <div class="showcase-phone">
+          <img src="./assets/shot-feedback.png" alt="会話のふり返りとフィードバックのスコア画面" loading="lazy" />
+        </div>
+      </section>
+
+      <section class="ln-section ln-cta">
+        <h2>今日から、ニュースで英語を。</h2>
+        <p class="lead">App Storeで LingoNews を見つけて、7日間の無料トライアルを始めましょう。</p>
+        <div class="actions actions-center">
+          <a class="button appstore" href="https://apps.apple.com/app/id6764214485" target="_blank" rel="noopener">
+            <svg viewBox="0 0 384 512" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            <span>App Storeでダウンロード</span>
+          </a>
+          <a class="button secondary" href="./support.html">サポート</a>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="./assets/app-icon.png" alt="" width="28" height="28" />
+          <span>LingoNews — by Engdojo</span>
+        </div>
+        <nav class="footer-links">
+          <a href="./support.html">サポート</a>
+          <a href="./privacy-policy.html">プライバシーポリシー</a>
+          <a href="./terms.html">利用規約</a>
+          <a href="mailto:engdojo0306@gmail.com">お問い合わせ</a>
+        </nav>
+      </div>
+      <p class="footer-copy">© <span id="year">2026</span> Engdojo. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

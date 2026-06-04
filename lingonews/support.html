@@ -1,31 +1,107 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LingoNews Support</title>
+    <title>LingoNews サポート | Support</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
+    <header class="site-nav">
+      <a class="nav-brand" href="./">
+        <img src="./assets/app-icon.png" alt="" width="32" height="32" />
+        <span>LingoNews</span>
+      </a>
+      <nav class="nav-links">
+        <a href="./#features">特長</a>
+        <a href="./#teachers">会話</a>
+        <a href="./support.html">サポート</a>
+        <a href="./privacy-policy.html">プライバシー</a>
+      </nav>
+    </header>
+
     <main class="page legal-page">
-      <a class="back" href="./">← LingoNews</a>
-      <h1>Support</h1>
-      <p>
-        Need help with LingoNews? Contact us by email:
-        <a href="mailto:oya0306@gmail.com">oya0306@gmail.com</a>
-      </p>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-lang="ja" class="active">日本語</button>
+        <button type="button" data-lang="en">English</button>
+      </div>
 
-      <h2>Account Deletion</h2>
-      <p>
-        You can delete your account in the app:
-        Settings → アカウント → アカウントを削除 → 削除する
-      </p>
+      <!-- Japanese -->
+      <div class="lang-pane" data-lang="ja">
+        <h1>LingoNews サポート</h1>
+        <p>実際のニュースで英語を学ぶ。ご質問や問題がございましたら、お気軽にお問い合わせください。</p>
 
-      <h2>Subscriptions</h2>
-      <p>
-        Subscriptions are managed through your Apple Account. You can cancel or manage your
-        subscription from the App Store subscription settings.
-      </p>
+        <h2>お問い合わせ</h2>
+        <p>メール：<a href="mailto:engdojo0306@gmail.com">engdojo0306@gmail.com</a></p>
+
+        <h2>よくある質問</h2>
+
+        <h3>ログインの方法は？</h3>
+        <p>LingoNewsはGoogleサインインを使用します。ログイン画面で「Googleでログイン」をタップし、画面の指示に従ってください。</p>
+
+        <h3>難易度の変更方法は？</h3>
+        <p>ホーム画面で難易度タブ（初級 / 中級 / 上級）をタップして、初級・中級・上級の記事を切り替えられます。</p>
+
+        <h3>無料トライアルの仕組みは？</h3>
+        <p>新規ユーザーは7日間の無料トライアルですべての機能を利用できます。トライアル終了後、会話練習などのプレミアム機能を続けて使うにはサブスクリプションが必要です。</p>
+
+        <h3>サブスクリプションの解約方法は？</h3>
+        <p>サブスクリプションはApple IDの設定からいつでも管理・解約できます：設定 → Apple ID → サブスクリプション → LingoNews。</p>
+
+        <h3>マイクが動作しない</h3>
+        <p>LingoNewsにマイクの許可を与えているか確認してください。設定 → LingoNews → マイク を開いて有効にしてください。</p>
+
+        <h2>プライバシーポリシー</h2>
+        <p><a href="./privacy-policy.html">プライバシーポリシーを見る</a></p>
+      </div>
+
+      <!-- English -->
+      <div class="lang-pane" data-lang="en" hidden>
+        <h1>LingoNews Support</h1>
+        <p>Learn English through real news. If you have any questions or issues, we're here to help.</p>
+
+        <h2>Contact</h2>
+        <p>Email us at: <a href="mailto:engdojo0306@gmail.com">engdojo0306@gmail.com</a></p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>How do I log in?</h3>
+        <p>LingoNews uses Google Sign-In. Tap "Sign in with Google" on the login screen and follow the prompts.</p>
+
+        <h3>How do I change my difficulty level?</h3>
+        <p>On the home screen, tap the difficulty tabs (初級 / 中級 / 上級) to switch between beginner, intermediate, and advanced articles.</p>
+
+        <h3>How does the free trial work?</h3>
+        <p>New users get a 7-day free trial with full access. After the trial, a subscription is required to continue using conversation practice and other premium features.</p>
+
+        <h3>How do I cancel my subscription?</h3>
+        <p>You can manage or cancel your subscription at any time through your Apple ID settings: Settings → Apple ID → Subscriptions → LingoNews.</p>
+
+        <h3>The microphone isn't working</h3>
+        <p>Make sure you've granted LingoNews microphone permission. Go to Settings → LingoNews → Microphone and enable it.</p>
+
+        <h2>Privacy Policy</h2>
+        <p><a href="./privacy-policy.html">View our Privacy Policy</a></p>
+      </div>
+
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="./assets/app-icon.png" alt="" width="28" height="28" />
+          <span>LingoNews — by Engdojo</span>
+        </div>
+        <nav class="footer-links">
+          <a href="./support.html">サポート</a>
+          <a href="./privacy-policy.html">プライバシーポリシー</a>
+          <a href="./terms.html">利用規約</a>
+          <a href="mailto:engdojo0306@gmail.com">お問い合わせ</a>
+        </nav>
+      </div>
+      <p class="footer-copy">© <span id="year">2026</span> Engdojo. All rights reserved.</p>
+    </footer>
+
+    <script src="../lang-toggle.js"></script>
   </body>
 </html>

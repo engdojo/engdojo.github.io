@@ -1,22 +1,68 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LingoNews Terms</title>
+    <title>LingoNews 利用規約 | Terms of Use</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
+    <header class="site-nav">
+      <a class="nav-brand" href="./">
+        <img src="./assets/app-icon.png" alt="" width="32" height="32" />
+        <span>LingoNews</span>
+      </a>
+      <nav class="nav-links">
+        <a href="./#features">特長</a>
+        <a href="./#teachers">会話</a>
+        <a href="./support.html">サポート</a>
+        <a href="./privacy-policy.html">プライバシー</a>
+      </nav>
+    </header>
+
     <main class="page legal-page">
-      <a class="back" href="./">← LingoNews</a>
-      <h1>Terms of Use</h1>
-      <p>
-        LingoNews uses Apple's standard End User License Agreement for iOS apps.
-      </p>
-      <p>
-        View Apple's standard EULA:
-        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
-      </p>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-lang="ja" class="active">日本語</button>
+        <button type="button" data-lang="en">English</button>
+      </div>
+
+      <!-- Japanese -->
+      <div class="lang-pane" data-lang="ja">
+        <h1>利用規約</h1>
+        <p>LingoNewsは、iOSアプリ向けにAppleの標準エンドユーザー使用許諾契約（EULA）を使用します。</p>
+        <p>
+          Appleの標準EULAはこちらでご確認いただけます：<br />
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+        </p>
+      </div>
+
+      <!-- English -->
+      <div class="lang-pane" data-lang="en" hidden>
+        <h1>Terms of Use</h1>
+        <p>LingoNews uses Apple's standard End User License Agreement (EULA) for iOS apps.</p>
+        <p>
+          View Apple's standard EULA:<br />
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+        </p>
+      </div>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="./assets/app-icon.png" alt="" width="28" height="28" />
+          <span>LingoNews — by Engdojo</span>
+        </div>
+        <nav class="footer-links">
+          <a href="./support.html">サポート</a>
+          <a href="./privacy-policy.html">プライバシーポリシー</a>
+          <a href="./terms.html">利用規約</a>
+          <a href="mailto:engdojo0306@gmail.com">お問い合わせ</a>
+        </nav>
+      </div>
+      <p class="footer-copy">© <span id="year">2026</span> Engdojo. All rights reserved.</p>
+    </footer>
+
+    <script src="../lang-toggle.js"></script>
   </body>
 </html>
